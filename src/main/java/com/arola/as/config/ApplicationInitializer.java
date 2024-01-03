@@ -1,0 +1,35 @@
+package com.arola.as.config;
+
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRegistration;
+
+import org.springframework.web.WebApplicationInitializer;
+import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
+import org.springframework.web.servlet.DispatcherServlet;
+
+public class ApplicationInitializer implements WebApplicationInitializer {
+
+	@Override
+	public void onStartup(ServletContext servletContext) throws ServletException {
+		
+		// create an object of the applicationContext class to use by the DS
+		AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();
+		
+		// register the configuration class with the web config context
+		context.register(ApplicationContextConfig.class);
+		
+		// create a dispatcher servlet
+		DispatcherServlet dServlet = new DispatcherServlet(context);
+		
+		// register it with the servletContext object
+		ServletRegistration.Dynamic registeredServlet = 
+				servletContext.addServlet("arolasparkleServlet", dServlet);
+		
+		// add more configurations to it, load-on-startup and mapping
+		registeredServlet.setLoadOnStartup(1);
+		registeredServlet.addMapping("/");
+
+	}
+
+}

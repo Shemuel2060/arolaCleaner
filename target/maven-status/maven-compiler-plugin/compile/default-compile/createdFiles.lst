@@ -1,0 +1,3 @@
+com\arola\as\controllers\HomeController.class
+com\arola\as\config\ApplicationInitializer.class
+com\arola\as\config\ApplicationContextConfig.class
