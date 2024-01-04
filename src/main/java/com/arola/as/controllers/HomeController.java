@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HomeController {
 	
 	
-	@RequestMapping("/welcome")
+	@RequestMapping("/") // handles root url
 	public String welcome() {
-		return "welcome";
+		return "home";
 	}
 
 }

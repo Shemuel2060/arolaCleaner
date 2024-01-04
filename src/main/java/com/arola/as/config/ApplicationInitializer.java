@@ -7,8 +7,10 @@ import javax.servlet.ServletRegistration;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
+import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-public class ApplicationInitializer implements WebApplicationInitializer {
+public class ApplicationInitializer implements WebApplicationInitializer, WebMvcConfigurer  {
 
 	@Override
 	public void onStartup(ServletContext servletContext) throws ServletException {
@@ -31,5 +33,11 @@ public class ApplicationInitializer implements WebApplicationInitializer {
 		registeredServlet.addMapping("/");
 
 	}
+	
+	 @Override
+	 public void addViewControllers(ViewControllerRegistry registry) {
+	        // Maps the root URL ("/") to the "welcome" view name
+	        registry.addViewController("/").setViewName("welcome");
+	    }
 
 }
