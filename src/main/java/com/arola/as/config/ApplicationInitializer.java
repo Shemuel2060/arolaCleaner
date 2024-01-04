@@ -37,7 +37,7 @@ public class ApplicationInitializer implements WebApplicationInitializer, WebMvc
 	 @Override
 	 public void addViewControllers(ViewControllerRegistry registry) {
 	        // Maps the root URL ("/") to the "welcome" view name
-	        registry.addViewController("/").setViewName("welcome");
+	        registry.addViewController("/").setViewName("home");
 	    }
 
 }
