@@ -7,10 +7,12 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
+            background-color: #333;
+            color: #f8f9fa;
             margin: 0;
-            padding: 20px;
+            padding: 100px;
+            justify-content: center;
+            width:70%;
         }
 
         h1 {
@@ -35,6 +37,7 @@
 
         blockquote {
             background-color: #e2e3e5;
+            color:#007bff;
             padding: 10px;
             border-left: 5px solid #007bff;
             margin-top: 0;
