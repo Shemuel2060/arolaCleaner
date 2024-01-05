@@ -2,8 +2,8 @@ package com.arola.as.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import com.arola.as.api.Visitors;
 
@@ -11,17 +11,15 @@ import com.arola.as.api.Visitors;
 public class ContactFormController {
 	
 	@RequestMapping("/showContactForm")
-	public String showContactForm() {
+	public String showContactForm(@ModelAttribute("user") Visitors visitor) {		
+		
 		return "contact-form";
 	}
 	
 	// handler for processing form
 	
 	@RequestMapping("/processContactForm")
-	public String processContactForm(Visitors visitor, Model model) { 
-		
-		//the model for transferring data from controller to view
-		model.addAttribute("visitor", visitor);
+	public String processContactForm(@ModelAttribute("visitor") Visitors visitor) { 
 		
 		// access the attribute names in the view page to get the inputs and display them
 		

@@ -52,7 +52,7 @@ nav a {
 	<header>
 		<!-- Navigation Bar -->
 		<nav>
-			<a href="/arolasparkle">Arola Sparkle</a> 
+			<a href="/arolasparkle">Arola Sparkles</a> 
 			<a href="/arolasparkle">Home</a> 
 			<a href="#">About</a>
 			<a href="#">Services</a> 
@@ -61,7 +61,7 @@ nav a {
 		</nav>
 
 
-		<h1>Welcome to Arola Sparkle</h1>
+		<h1>Welcome to Arola Sparkles</h1>
 	</header>
 
 	<main>
@@ -70,7 +70,7 @@ nav a {
 		<p>Edit this content to customize your homepage.</p>
 	</main>
 
-	<footer> &copy; 2024 Arola Sparkle. All rights reserved. </footer>
+	<footer> &copy; 2024 Arola Sparkles. All rights reserved. </footer>
 
 </body>
 </html>

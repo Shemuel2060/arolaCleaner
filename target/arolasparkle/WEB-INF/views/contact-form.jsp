@@ -1,3 +1,6 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>  
+<!-- spring mvc taglib enables using spring mvc tags -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
