@@ -1,3 +1,6 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>  
+<!-- spring mvc taglib enables using spring mvc tags -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -119,19 +122,20 @@
     
 	    <div class="container">
 	        <h1>Contact Us</h1>
-	        <form action ="processContactForm"> <!-- invoke the handler mapped at processContactForm -->
+	        <!-- invoke the handler mapped at processContactForm -->
+	        <form:form action ="processContactForm" modelAttribute="user">
 	        
 	            <label for="name">Name:</label>
-	            <input type="text" id="name" name="name" required>
+	            <form:input id="name" path="name" required="required"/>
 	
 	            <label for="email">Email:</label>
-	            <input type="email" id="email" name="email" required>
+	            <form:input id="email" path="email" required="required"/>
 	
 	            <label for="message">Message:</label>
-	            <textarea id="message" name="message" rows="4" required></textarea>
+	            <form:textarea id="message" path="message" rows="4" required="required"/>
 	
 	            <button type="submit">Submit</button>
-	        </form>       
+	        </form:form>       
 	        
 	    </div>
 	    <div class="info-container">

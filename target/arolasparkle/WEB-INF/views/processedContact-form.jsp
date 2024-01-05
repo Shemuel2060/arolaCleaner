@@ -43,13 +43,19 @@
             margin-top: 0;
             margin-bottom: 15px;
         }
+       a{
+        	color:#007bff;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
-    <h1>Hi, ${visitorName}</h1>  
+    <h1>Hi, ${visitor.name}</h1>  
     <p>Thanks for contacting <span>Arola Sparkles</span>.</p> 
-    <p>A verification code is sent to <i>${visitorEmail}</i>.</p> 
+    <p>A verification code is sent to <i>${visitor.email}</i>.</p> 
     <p>The following message was received from you:</p>
-    <blockquote>${visitorMessage}</blockquote>
+    <blockquote>${visitor.message}</blockquote>
+    <p>Go back to <a href="/arolasparkle">Arola Sparkles</a></p>
+   
 </body>
 </html>

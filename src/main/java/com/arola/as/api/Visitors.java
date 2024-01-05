@@ -3,9 +3,9 @@ package com.arola.as.api;
 public class Visitors {
 	
 	// field names SHOULD match those used in the input tags
-	private String name;
-	private String email;
-	private String message;
+	private String name="e.g Samuel";
+	private String email ="newton@arola.com";
+	private String message ="type message here...";
 	
 	
 	// getters and setters
