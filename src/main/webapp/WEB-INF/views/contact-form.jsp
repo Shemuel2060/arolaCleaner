@@ -119,7 +119,8 @@
     
 	    <div class="container">
 	        <h1>Contact Us</h1>
-	        <form>
+	        <form action ="processContactForm"> <!-- invoke the handler mapped at processContactForm -->
+	        
 	            <label for="name">Name:</label>
 	            <input type="text" id="name" name="name" required>
 	

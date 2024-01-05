@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CleanIt</title>
+<title>Arola Sparkle</title>
 <style>
 body {
 	font-family: Arial, sans-serif;
@@ -52,11 +52,11 @@ nav a {
 	<header>
 		<!-- Navigation Bar -->
 		<nav>
-			<a href="#">Arola Sparkle</a> 
-			<a href="#">Home</a> 
+			<a href="/arolasparkle">Arola Sparkle</a> 
+			<a href="/arolasparkle">Home</a> 
 			<a href="#">About</a>
 			<a href="#">Services</a> 
-			<a href="#">Contact</a> 
+			<a href="showContactForm">Contact</a> 
 			<a href="#">Join</a>
 		</nav>
 
